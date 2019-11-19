@@ -18,6 +18,7 @@
 		C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */; };
 		C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A52381F1B40087D1E4 /* TakahataFilm.swift */; };
 		C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */; };
+		C61484A92384784300F11FDD /* TakahataCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiFilms.swift; sourceTree = "<group>"; };
 		C60190A52381F1B40087D1E4 /* TakahataFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataFilm.swift; sourceTree = "<group>"; };
 		C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiCellTableViewCell.swift; sourceTree = "<group>"; };
+		C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */,
 				C60190A52381F1B40087D1E4 /* TakahataFilm.swift */,
 				C60190A12381E4020087D1E4 /* TakahataVC.swift */,
+				C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */,
 				C60190942381DAC50087D1E4 /* Assets.xcassets */,
 				C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */,
 				C60190992381DAC50087D1E4 /* Info.plist */,
@@ -156,6 +159,7 @@
 				C60190902381DAC20087D1E4 /* ViewController.swift in Sources */,
 				C60190A02381E3B20087D1E4 /* MiyazkiVC.swift in Sources */,
 				C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */,
+				C61484A92384784300F11FDD /* TakahataCellTableViewCell.swift in Sources */,
 				C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */,
 				C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */,
 				C60190A22381E4020087D1E4 /* TakahataVC.swift in Sources */,

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
     
     var miyazakiFilms = [MiyazakiFilm]()
+    var takahataFilms = [TakahataFilm]()
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,9 +27,10 @@ class ViewController: UIViewController {
         }
         miyazaki.mhfilms = miyazakiFilms
         
-//        guard let takahata = segue.destination as? TakahataVC else {
-//            fatalError("button did not work")
-//        }
+        guard let takahata = segue.destination as? TakahataVC else {
+            fatalError("button did not work")
+        }
+        takahata.itFilms = takahataFilms
         
     }
 

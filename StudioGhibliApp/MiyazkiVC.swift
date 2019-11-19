@@ -11,16 +11,13 @@ import UIKit
 class MiyazkiVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
-    var mhfilms = [MiyazakiFilm]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+
+    var mhfilms = [MiyazakiFilm]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        mhfilms = MiyazakiFilm.movie
     }
 
 
