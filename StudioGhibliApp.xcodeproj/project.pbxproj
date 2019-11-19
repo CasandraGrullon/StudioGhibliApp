@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C601908C2381DAC20087D1E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908B2381DAC20087D1E4 /* AppDelegate.swift */; };
+		C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908D2381DAC20087D1E4 /* SceneDelegate.swift */; };
+		C60190902381DAC20087D1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908F2381DAC20087D1E4 /* ViewController.swift */; };
+		C60190932381DAC20087D1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190912381DAC20087D1E4 /* Main.storyboard */; };
+		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
+		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
+		C60190A02381E3B20087D1E4 /* MiyazkiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */; };
+		C60190A22381E4020087D1E4 /* TakahataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A12381E4020087D1E4 /* TakahataVC.swift */; };
+		C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */; };
+		C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A52381F1B40087D1E4 /* TakahataFilm.swift */; };
+		C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C60190882381DAC20087D1E4 /* StudioGhibliApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioGhibliApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C601908B2381DAC20087D1E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C601908D2381DAC20087D1E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C601908F2381DAC20087D1E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C60190922381DAC20087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C60190942381DAC50087D1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazkiVC.swift; sourceTree = "<group>"; };
+		C60190A12381E4020087D1E4 /* TakahataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataVC.swift; sourceTree = "<group>"; };
+		C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiFilms.swift; sourceTree = "<group>"; };
+		C60190A52381F1B40087D1E4 /* TakahataFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataFilm.swift; sourceTree = "<group>"; };
+		C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiCellTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C60190852381DAC20087D1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C601907F2381DAC20087D1E4 = {
+			isa = PBXGroup;
+			children = (
+				C601908A2381DAC20087D1E4 /* StudioGhibliApp */,
+				C60190892381DAC20087D1E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C60190892381DAC20087D1E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C60190882381DAC20087D1E4 /* StudioGhibliApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C601908A2381DAC20087D1E4 /* StudioGhibliApp */ = {
+			isa = PBXGroup;
+			children = (
+				C601908B2381DAC20087D1E4 /* AppDelegate.swift */,
+				C601908D2381DAC20087D1E4 /* SceneDelegate.swift */,
+				C601908F2381DAC20087D1E4 /* ViewController.swift */,
+				C60190912381DAC20087D1E4 /* Main.storyboard */,
+				C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */,
+				C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */,
+				C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */,
+				C60190A52381F1B40087D1E4 /* TakahataFilm.swift */,
+				C60190A12381E4020087D1E4 /* TakahataVC.swift */,
+				C60190942381DAC50087D1E4 /* Assets.xcassets */,
+				C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */,
+				C60190992381DAC50087D1E4 /* Info.plist */,
+			);
+			path = StudioGhibliApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C60190872381DAC20087D1E4 /* StudioGhibliApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C601909C2381DAC50087D1E4 /* Build configuration list for PBXNativeTarget "StudioGhibliApp" */;
+			buildPhases = (
+				C60190842381DAC20087D1E4 /* Sources */,
+				C60190852381DAC20087D1E4 /* Frameworks */,
+				C60190862381DAC20087D1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudioGhibliApp;
+			productName = StudioGhibliApp;
+			productReference = C60190882381DAC20087D1E4 /* StudioGhibliApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C60190802381DAC20087D1E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "casandra grullon";
+				TargetAttributes = {
+					C60190872381DAC20087D1E4 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = C60190832381DAC20087D1E4 /* Build configuration list for PBXProject "StudioGhibliApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C601907F2381DAC20087D1E4;
+			productRefGroup = C60190892381DAC20087D1E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C60190872381DAC20087D1E4 /* StudioGhibliApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C60190862381DAC20087D1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */,
+				C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */,
+				C60190932381DAC20087D1E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C60190842381DAC20087D1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60190902381DAC20087D1E4 /* ViewController.swift in Sources */,
+				C60190A02381E3B20087D1E4 /* MiyazkiVC.swift in Sources */,
+				C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */,
+				C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */,
+				C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */,
+				C60190A22381E4020087D1E4 /* TakahataVC.swift in Sources */,
+				C601908C2381DAC20087D1E4 /* AppDelegate.swift in Sources */,
+				C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C60190912381DAC20087D1E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60190922381DAC20087D1E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60190972381DAC50087D1E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C601909A2381DAC50087D1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C601909B2381DAC50087D1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C601909D2381DAC50087D1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRUP55ZMLQ;
+				INFOPLIST_FILE = StudioGhibliApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casandragrullon.StudioGhibliApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C601909E2381DAC50087D1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRUP55ZMLQ;
+				INFOPLIST_FILE = StudioGhibliApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casandragrullon.StudioGhibliApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C60190832381DAC20087D1E4 /* Build configuration list for PBXProject "StudioGhibliApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C601909A2381DAC50087D1E4 /* Debug */,
+				C601909B2381DAC50087D1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C601909C2381DAC50087D1E4 /* Build configuration list for PBXNativeTarget "StudioGhibliApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C601909D2381DAC50087D1E4 /* Debug */,
+				C601909E2381DAC50087D1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C60190802381DAC20087D1E4 /* Project object */;
+}

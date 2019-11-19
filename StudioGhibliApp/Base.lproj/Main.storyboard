@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otq-VG-PLj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StudioGhibliApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studio Ghibli" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3W-bR-o8l">
+                                <rect key="frame" x="156" y="138" width="102" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A_studio_ghibli_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lB2-JF-NTC">
+                                <rect key="frame" x="0.0" y="178.5" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Dky-WM-X3c"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePb-nU-a2S">
+                                <rect key="frame" x="50" y="716.5" width="125" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Hayao Miyazaki">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lBg-EH-T7f" kind="show" id="Cda-M5-aFm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZY-8c-dKW">
+                                <rect key="frame" x="254" y="716.5" width="110" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Isao Takahata">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTE-I9-ruW">
+                                <rect key="frame" x="20" y="498.5" width="374" height="158"/>
+                                <string key="text">Studio Ghibi was founded in 1985 by directors Hayao Miyazaki, Isao Takahata and Toshio Suzuki.
+
+The studio has produced many notable films mainly directed by Miyazaki and Takahat. 
+
+Each director’s full filmography at Studio Ghibli is available on the links below.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1123688862192104" green="0.68963330834601966" blue="0.96631107233502533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ePb-nU-a2S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0gY-wL-5xY"/>
+                            <constraint firstItem="UZY-8c-dKW" firstAttribute="top" secondItem="UTE-I9-ruW" secondAttribute="bottom" constant="60" id="225-RO-Dfn"/>
+                            <constraint firstItem="ePb-nU-a2S" firstAttribute="centerY" secondItem="UZY-8c-dKW" secondAttribute="centerY" id="7pg-8Q-OL2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UZY-8c-dKW" secondAttribute="trailing" constant="50" id="9kw-b0-5h8"/>
+                            <constraint firstItem="lB2-JF-NTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DNE-pu-92n"/>
+                            <constraint firstItem="UTE-I9-ruW" firstAttribute="top" secondItem="lB2-JF-NTC" secondAttribute="bottom" constant="20" id="NvK-c6-g0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lB2-JF-NTC" secondAttribute="trailing" id="Uhd-1F-GSl"/>
+                            <constraint firstItem="ePb-nU-a2S" firstAttribute="top" secondItem="UTE-I9-ruW" secondAttribute="bottom" constant="60" id="aSQ-Or-AUa"/>
+                            <constraint firstItem="j3W-bR-o8l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iWX-ZB-QfQ"/>
+                            <constraint firstItem="UTE-I9-ruW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lr1-aW-BeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="UTE-I9-ruW" secondAttribute="trailing" constant="20" id="rqb-Ms-0uV"/>
+                            <constraint firstItem="lB2-JF-NTC" firstAttribute="top" secondItem="j3W-bR-o8l" secondAttribute="bottom" constant="20" id="s9b-50-eR8"/>
+                            <constraint firstItem="j3W-bR-o8l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="weW-pp-Vau"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RLC-vI-7AH"/>
+                    <connections>
+                        <outlet property="ghibliLogo" destination="lB2-JF-NTC" id="aL2-rN-jC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="111.83035714285714"/>
+        </scene>
+        <!--TakahataVC-->
+        <scene sceneID="HMQ-ZJ-BCb">
+            <objects>
+                <viewController id="fwb-lX-9WK" customClass="TakahataVC" customModule="StudioGhibliApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBi-Dr-vKr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fxy-Nq-dWm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zF0-El-VnR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCy-FR-uyi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613.0434782608697" y="337.5"/>
+        </scene>
+        <!--MiyazkiVC-->
+        <scene sceneID="mbD-Mk-91U">
+            <objects>
+                <viewController id="lBg-EH-T7f" customClass="MiyazkiVC" customModule="StudioGhibliApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Kr-Xj-37t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIQ-s3-IfP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="miyazakiCell" rowHeight="160" id="vKl-kK-pgC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vKl-kK-pgC" id="zzi-KD-TzA" customClass="MiyazakiCellTableViewCell" customModule="StudioGhibliApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xco-bj-1b2">
+                                                    <rect key="frame" x="8" y="8" width="150" height="144"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="RWZ-G0-2yp"/>
+                                                        <constraint firstAttribute="height" constant="100" id="TD5-Tu-EWa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKC-NI-b8d">
+                                                    <rect key="frame" x="166" y="70" width="240" height="20.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYI-FX-mn7">
+                                                    <rect key="frame" x="166" y="98.5" width="240" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xco-bj-1b2" firstAttribute="leading" secondItem="zzi-KD-TzA" secondAttribute="leading" constant="8" id="3ZM-Za-Oe2"/>
+                                                <constraint firstItem="DYI-FX-mn7" firstAttribute="top" secondItem="zKC-NI-b8d" secondAttribute="bottom" constant="8" id="6tV-fn-TXg"/>
+                                                <constraint firstItem="xco-bj-1b2" firstAttribute="top" secondItem="zzi-KD-TzA" secondAttribute="top" constant="8" id="TmA-cd-q60"/>
+                                                <constraint firstItem="zKC-NI-b8d" firstAttribute="centerY" secondItem="zzi-KD-TzA" secondAttribute="centerY" id="ZMN-Ss-ANw"/>
+                                                <constraint firstItem="xco-bj-1b2" firstAttribute="centerY" secondItem="zzi-KD-TzA" secondAttribute="centerY" id="cUZ-9j-nLP"/>
+                                                <constraint firstAttribute="trailing" secondItem="DYI-FX-mn7" secondAttribute="trailing" constant="8" id="jiG-xr-x1O"/>
+                                                <constraint firstAttribute="trailing" secondItem="zKC-NI-b8d" secondAttribute="trailing" constant="8" id="ryK-29-La7"/>
+                                                <constraint firstItem="zKC-NI-b8d" firstAttribute="leading" secondItem="xco-bj-1b2" secondAttribute="trailing" constant="8" id="um3-ds-e1F"/>
+                                                <constraint firstItem="DYI-FX-mn7" firstAttribute="leading" secondItem="xco-bj-1b2" secondAttribute="trailing" constant="8" id="w3A-ow-aYx"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="movieDateLabel" destination="DYI-FX-mn7" id="1tG-DK-oub"/>
+                                                <outlet property="movieNameLabel" destination="zKC-NI-b8d" id="NRZ-YI-HAl"/>
+                                                <outlet property="moviePicture" destination="xco-bj-1b2" id="8Sc-6e-g5s"/>
+                                            </connections>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IIQ-s3-IfP" firstAttribute="top" secondItem="Kkn-7C-ebv" secondAttribute="top" id="KIT-wH-VwL"/>
+                            <constraint firstItem="IIQ-s3-IfP" firstAttribute="leading" secondItem="Kkn-7C-ebv" secondAttribute="leading" id="Pbp-ZV-QkK"/>
+                            <constraint firstItem="Kkn-7C-ebv" firstAttribute="bottom" secondItem="IIQ-s3-IfP" secondAttribute="bottom" id="Wzw-wX-ITL"/>
+                            <constraint firstItem="Kkn-7C-ebv" firstAttribute="trailing" secondItem="IIQ-s3-IfP" secondAttribute="trailing" id="f6W-4u-MbE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kkn-7C-ebv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N4B-6v-r3T"/>
+                    <connections>
+                        <outlet property="tableView" destination="IIQ-s3-IfP" id="K0t-S5-hsc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twl-kP-kjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="-317.41071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hyq-T6-fx1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="otq-VG-PLj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VoX-bQ-310">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KqT-Qm-y6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M98-UG-YC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A_studio_ghibli_logo" width="2000" height="1600"/>
+    </resources>
+</document>
