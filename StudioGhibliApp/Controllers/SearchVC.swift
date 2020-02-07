@@ -18,7 +18,14 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
+        //view.backgroundColor = .systemTeal
+        view.largeContentImage = #imageLiteral(resourceName: "logo")
+        //backgroundImage()
+        
+        
+    }
+    private func backgroundImage() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "logo")!)
     }
 
 }

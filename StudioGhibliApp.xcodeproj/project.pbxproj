@@ -11,6 +11,7 @@
 		C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908D2381DAC20087D1E4 /* SceneDelegate.swift */; };
 		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
 		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
+		C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */; };
 		C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B023EDA0A10077B759 /* TabBar.swift */; };
 		C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B223EDA50A0077B759 /* SearchVC.swift */; };
 		C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B423EDA52D0077B759 /* MoviesVC.swift */; };
@@ -35,6 +36,7 @@
 		C60190942381DAC50087D1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghibli.swift; sourceTree = "<group>"; };
 		C67DA0B023EDA0A10077B759 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C67DA0B223EDA50A0077B759 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		C67DA0B423EDA52D0077B759 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				C601908B2381DAC20087D1E4 /* AppDelegate.swift */,
 				C601908D2381DAC20087D1E4 /* SceneDelegate.swift */,
+				C67D0A4123EDB45400F8BDC3 /* Model */,
 				C67DA0C323EDA5ED0077B759 /* Views */,
 				C67DA0C023EDA5C10077B759 /* Controllers */,
 				C60190942381DAC50087D1E4 /* Assets.xcassets */,
@@ -91,6 +94,14 @@
 				C60190992381DAC50087D1E4 /* Info.plist */,
 			);
 			path = StudioGhibliApp;
+			sourceTree = "<group>";
+		};
+		C67D0A4123EDB45400F8BDC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C67DA0C023EDA5C10077B759 /* Controllers */ = {
@@ -194,6 +205,7 @@
 			files = (
 				C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */,
 				C67DA0C523EDA6030077B759 /* MoviesView.swift in Sources */,
+				C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */,
 				C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */,
 				C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */,
 				C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */,
