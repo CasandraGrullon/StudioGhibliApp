@@ -9,20 +9,32 @@
 import UIKit
 
 class SearchView: UIView {
-
+    
     public lazy var searchBar: UISearchBar = {
-       let search = UISearchBar()
+        let search = UISearchBar()
         search.placeholder = "search for movie"
         search.tintColor = .white
-        search.barTintColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        search.barTintColor = #colorLiteral(red: 0.0700783506, green: 0.7016590238, blue: 0.9675981402, alpha: 1)
         return search
+    }()
+    public lazy var opaqueView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .black
+        view.alpha = 0.2
+        return view
+    }()
+    public lazy var ghibliLogo: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = #imageLiteral(resourceName: "logo")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
     }()
     public lazy var aboutLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.textColor = .white
         label.numberOfLines = 0
-        label.font = UIFont(name: "Avenir Heavy", size: 18)
+        label.font = UIFont(name: "Lao Sangam MN", size: 20)
         label.text = """
         Studio Ghibli was founded in 1985 by directors Hayao Miyazaki, Isao Takahata and producer Toshio Suzuki.
         Since its opening, Studio Ghibli has released over 20 animated films and shorts and has become one of the most highly acclaimed animation studios in the world.
@@ -30,7 +42,7 @@ class SearchView: UIView {
         return label
     }()
     
-
+    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
@@ -40,10 +52,36 @@ class SearchView: UIView {
         commonInit()
     }
     private func commonInit() {
+        
+        logoImageConstraints()
         searchBarConstraints()
+        opaqueViewCOnstraints()
+        
         aboutLabelConstraints()
     }
-
+    
+    private func logoImageConstraints() {
+        addSubview(ghibliLogo)
+        ghibliLogo.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            ghibliLogo.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            ghibliLogo.trailingAnchor.constraint(equalTo: trailingAnchor),
+            ghibliLogo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 410),
+            ghibliLogo.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
+    private func opaqueViewCOnstraints() {
+        addSubview(opaqueView)
+        opaqueView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            opaqueView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            opaqueView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            opaqueView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            opaqueView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
     private func searchBarConstraints() {
         addSubview(searchBar)
         searchBar.translatesAutoresizingMaskIntoConstraints = false
@@ -64,5 +102,5 @@ class SearchView: UIView {
             aboutLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20)
         ])
     }
-
+    
 }
