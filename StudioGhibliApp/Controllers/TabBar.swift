@@ -10,21 +10,27 @@ import UIKit
 
 class TabBar: UITabBarController {
 
+    private lazy var searchVC: SearchVC = {
+       let viewController = SearchVC()
+        viewController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 0)
+        return viewController
+    }()
+    private lazy var moviesVC: MoviesVC = {
+       let viewController = MoviesVC()
+        viewController.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film"), tag: 1)
+        return viewController
+    }()
+    private lazy var favoritesVC: FavoritesVC = {
+       let viewController = FavoritesVC()
+        viewController.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "heart.fill"), tag: 1)
+        return viewController
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewControllers = [UINavigationController(rootViewController: searchVC), UINavigationController(rootViewController: moviesVC), UINavigationController(rootViewController: favoritesVC)]
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
