@@ -9,33 +9,47 @@
 /* Begin PBXBuildFile section */
 		C601908C2381DAC20087D1E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908B2381DAC20087D1E4 /* AppDelegate.swift */; };
 		C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908D2381DAC20087D1E4 /* SceneDelegate.swift */; };
-		C60190902381DAC20087D1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601908F2381DAC20087D1E4 /* ViewController.swift */; };
-		C60190932381DAC20087D1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190912381DAC20087D1E4 /* Main.storyboard */; };
 		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
 		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
-		C60190A02381E3B20087D1E4 /* MiyazkiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */; };
-		C60190A22381E4020087D1E4 /* TakahataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A12381E4020087D1E4 /* TakahataVC.swift */; };
-		C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */; };
-		C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60190A52381F1B40087D1E4 /* TakahataFilm.swift */; };
-		C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */; };
-		C61484A92384784300F11FDD /* TakahataCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */; };
+		C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B023EDA0A10077B759 /* TabBar.swift */; };
+		C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B223EDA50A0077B759 /* SearchVC.swift */; };
+		C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B423EDA52D0077B759 /* MoviesVC.swift */; };
+		C67DA0B723EDA5400077B759 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */; };
+		C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */; };
+		C67DA0BB23EDA5660077B759 /* TakahataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BA23EDA5660077B759 /* TakahataVC.swift */; };
+		C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BC23EDA57E0077B759 /* OtherDirectorsVC.swift */; };
+		C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BE23EDA5B70077B759 /* FavoritesVC.swift */; };
+		C67DA0C223EDA5E40077B759 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C123EDA5E40077B759 /* SearchView.swift */; };
+		C67DA0C523EDA6030077B759 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C423EDA6030077B759 /* MoviesView.swift */; };
+		C67DA0C723EDA6130077B759 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C623EDA6130077B759 /* MovieDetailView.swift */; };
+		C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C823EDA6290077B759 /* MiyazakiView.swift */; };
+		C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CA23EDA6370077B759 /* TakahataView.swift */; };
+		C67DA0CD23EDA6440077B759 /* OtherDirectorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CC23EDA6440077B759 /* OtherDirectorsView.swift */; };
+		C67DA0CF23EDA64E0077B759 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C60190882381DAC20087D1E4 /* StudioGhibliApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioGhibliApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C601908B2381DAC20087D1E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C601908D2381DAC20087D1E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C601908F2381DAC20087D1E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C60190922381DAC20087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C60190942381DAC50087D1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazkiVC.swift; sourceTree = "<group>"; };
-		C60190A12381E4020087D1E4 /* TakahataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataVC.swift; sourceTree = "<group>"; };
-		C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiFilms.swift; sourceTree = "<group>"; };
-		C60190A52381F1B40087D1E4 /* TakahataFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataFilm.swift; sourceTree = "<group>"; };
-		C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiCellTableViewCell.swift; sourceTree = "<group>"; };
-		C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataCellTableViewCell.swift; sourceTree = "<group>"; };
+		C67DA0B023EDA0A10077B759 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C67DA0B223EDA50A0077B759 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C67DA0B423EDA52D0077B759 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
+		C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiVC.swift; sourceTree = "<group>"; };
+		C67DA0BA23EDA5660077B759 /* TakahataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataVC.swift; sourceTree = "<group>"; };
+		C67DA0BC23EDA57E0077B759 /* OtherDirectorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDirectorsVC.swift; sourceTree = "<group>"; };
+		C67DA0BE23EDA5B70077B759 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		C67DA0C123EDA5E40077B759 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		C67DA0C423EDA6030077B759 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		C67DA0C623EDA6130077B759 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		C67DA0C823EDA6290077B759 /* MiyazakiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiView.swift; sourceTree = "<group>"; };
+		C67DA0CA23EDA6370077B759 /* TakahataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataView.swift; sourceTree = "<group>"; };
+		C67DA0CC23EDA6440077B759 /* OtherDirectorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDirectorsView.swift; sourceTree = "<group>"; };
+		C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,19 +84,42 @@
 			children = (
 				C601908B2381DAC20087D1E4 /* AppDelegate.swift */,
 				C601908D2381DAC20087D1E4 /* SceneDelegate.swift */,
-				C601908F2381DAC20087D1E4 /* ViewController.swift */,
-				C60190912381DAC20087D1E4 /* Main.storyboard */,
-				C604660A2383873F008131EB /* MiyazakiCellTableViewCell.swift */,
-				C601909F2381E3B20087D1E4 /* MiyazkiVC.swift */,
-				C60190A32381E74B0087D1E4 /* MiyazakiFilms.swift */,
-				C60190A52381F1B40087D1E4 /* TakahataFilm.swift */,
-				C60190A12381E4020087D1E4 /* TakahataVC.swift */,
-				C61484A82384784300F11FDD /* TakahataCellTableViewCell.swift */,
+				C67DA0C323EDA5ED0077B759 /* Views */,
+				C67DA0C023EDA5C10077B759 /* Controllers */,
 				C60190942381DAC50087D1E4 /* Assets.xcassets */,
 				C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */,
 				C60190992381DAC50087D1E4 /* Info.plist */,
 			);
 			path = StudioGhibliApp;
+			sourceTree = "<group>";
+		};
+		C67DA0C023EDA5C10077B759 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67DA0B023EDA0A10077B759 /* TabBar.swift */,
+				C67DA0B223EDA50A0077B759 /* SearchVC.swift */,
+				C67DA0B423EDA52D0077B759 /* MoviesVC.swift */,
+				C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */,
+				C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */,
+				C67DA0BA23EDA5660077B759 /* TakahataVC.swift */,
+				C67DA0BC23EDA57E0077B759 /* OtherDirectorsVC.swift */,
+				C67DA0BE23EDA5B70077B759 /* FavoritesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C67DA0C323EDA5ED0077B759 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C67DA0C123EDA5E40077B759 /* SearchView.swift */,
+				C67DA0C423EDA6030077B759 /* MoviesView.swift */,
+				C67DA0C623EDA6130077B759 /* MovieDetailView.swift */,
+				C67DA0C823EDA6290077B759 /* MiyazakiView.swift */,
+				C67DA0CA23EDA6370077B759 /* TakahataView.swift */,
+				C67DA0CC23EDA6440077B759 /* OtherDirectorsView.swift */,
+				C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +182,6 @@
 			files = (
 				C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */,
 				C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */,
-				C60190932381DAC20087D1E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,29 +192,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C60190902381DAC20087D1E4 /* ViewController.swift in Sources */,
-				C60190A02381E3B20087D1E4 /* MiyazkiVC.swift in Sources */,
-				C60190A62381F1B40087D1E4 /* TakahataFilm.swift in Sources */,
-				C61484A92384784300F11FDD /* TakahataCellTableViewCell.swift in Sources */,
-				C60190A42381E74B0087D1E4 /* MiyazakiFilms.swift in Sources */,
-				C604660B2383873F008131EB /* MiyazakiCellTableViewCell.swift in Sources */,
-				C60190A22381E4020087D1E4 /* TakahataVC.swift in Sources */,
+				C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */,
+				C67DA0C523EDA6030077B759 /* MoviesView.swift in Sources */,
+				C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */,
+				C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */,
+				C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */,
+				C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */,
+				C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */,
+				C67DA0BB23EDA5660077B759 /* TakahataVC.swift in Sources */,
+				C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */,
+				C67DA0C723EDA6130077B759 /* MovieDetailView.swift in Sources */,
+				C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */,
 				C601908C2381DAC20087D1E4 /* AppDelegate.swift in Sources */,
+				C67DA0B723EDA5400077B759 /* MovieDetailVC.swift in Sources */,
+				C67DA0CF23EDA64E0077B759 /* FavoritesView.swift in Sources */,
 				C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */,
+				C67DA0C223EDA5E40077B759 /* SearchView.swift in Sources */,
+				C67DA0CD23EDA6440077B759 /* OtherDirectorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C60190912381DAC20087D1E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C60190922381DAC20087D1E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
