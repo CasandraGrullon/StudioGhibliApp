@@ -27,22 +27,23 @@ class SearchVC: UIViewController {
     
     override func loadView() {
         view = searchView
-        makeSections()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getMovies()
+        searchView.moviesCollection.register(GhibliCell.self, forCellWithReuseIdentifier: "ghibliCell")
     }
     
     private func getMovies() {
-        ghiblis = [GhibliAPIClient.getMovies()]
+        ghiblis = GhibliAPIClient.getMovies()
     }
     
     private func makeSections() {
-        var miyazakiSection: [Ghibli]
-        var takahataSection: [Ghibli]
-        var otherSection: [Ghibli]
+        var miyazakiSection = [Ghibli]()
+        var takahataSection = [Ghibli]()
+        var otherSection = [Ghibli]()
+        
         for movie in ghiblis {
             if movie.director == "Hayao Miyazaki" {
                 miyazakiSection.append(movie)
@@ -71,7 +72,13 @@ extension SearchVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        guard let cell = searchView.moviesCollection.dequeueReusableCell(withReuseIdentifier: "ghibliCell", for: indexPath) as? GhibliCell else {
+            fatalError("could not cast to cell")
+        }
+        let movie = ghiblis[indexPath.row]
+        cell.backgroundColor = .white
+        cell.configureCell(for: movie)
+        return cell
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         

@@ -28,6 +28,7 @@
 		C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CA23EDA6370077B759 /* TakahataView.swift */; };
 		C67DA0CD23EDA6440077B759 /* OtherDirectorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CC23EDA6440077B759 /* OtherDirectorsView.swift */; };
 		C67DA0CF23EDA64E0077B759 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */; };
+		C6F7E1EC23F09C1B0093D4AA /* GhibliCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7E1EB23F09C1B0093D4AA /* GhibliCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C67DA0CA23EDA6370077B759 /* TakahataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataView.swift; sourceTree = "<group>"; };
 		C67DA0CC23EDA6440077B759 /* OtherDirectorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDirectorsView.swift; sourceTree = "<group>"; };
 		C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		C6F7E1EB23F09C1B0093D4AA /* GhibliCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		C67DA0C323EDA5ED0077B759 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6F7E1EA23F09BF80093D4AA /* Cells */,
 				C67DA0C123EDA5E40077B759 /* SearchView.swift */,
 				C67DA0C623EDA6130077B759 /* MovieDetailView.swift */,
 				C67DA0C823EDA6290077B759 /* MiyazakiView.swift */,
@@ -141,6 +144,14 @@
 				C67DA0CE23EDA64E0077B759 /* FavoritesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C6F7E1EA23F09BF80093D4AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6F7E1EB23F09C1B0093D4AA /* GhibliCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */,
 				C67DA0BB23EDA5660077B759 /* TakahataVC.swift in Sources */,
 				C67D0A4B23F091EF00F8BDC3 /* GhibliAPIClient.swift in Sources */,
+				C6F7E1EC23F09C1B0093D4AA /* GhibliCell.swift in Sources */,
 				C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */,
 				C67DA0C723EDA6130077B759 /* MovieDetailView.swift in Sources */,
 				C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */,
