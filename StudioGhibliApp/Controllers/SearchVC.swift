@@ -23,3 +23,6 @@ class SearchVC: UIViewController {
 
 
 }
+extension SearchVC: UITextFieldDelegate {
+    
+}

@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+struct Ghibli: Codable {
+    let id: String
+    let title: String
+    let description: String
+    let director: String
+    let producer: String
+    let releaseDate: String
+    let rating: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case description
+        case director
+        case producer
+        case releaseDate = "release_date"
+        case rating = "rt_score"
+    }
+}

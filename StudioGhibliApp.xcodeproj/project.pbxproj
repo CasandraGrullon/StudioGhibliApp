@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,16 +12,17 @@
 		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
 		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
 		C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */; };
+		C67D0A4923F090C400F8BDC3 /* GhibliJson.json in Resources */ = {isa = PBXBuildFile; fileRef = C67D0A4823F090C400F8BDC3 /* GhibliJson.json */; };
+		C67D0A4B23F091EF00F8BDC3 /* GhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */; };
+		C67D0A4F23F0924E00F8BDC3 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = C67D0A4E23F0924E00F8BDC3 /* ImageKit */; };
 		C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B023EDA0A10077B759 /* TabBar.swift */; };
 		C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B223EDA50A0077B759 /* SearchVC.swift */; };
-		C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B423EDA52D0077B759 /* MoviesVC.swift */; };
 		C67DA0B723EDA5400077B759 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */; };
 		C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */; };
 		C67DA0BB23EDA5660077B759 /* TakahataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BA23EDA5660077B759 /* TakahataVC.swift */; };
 		C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BC23EDA57E0077B759 /* OtherDirectorsVC.swift */; };
 		C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0BE23EDA5B70077B759 /* FavoritesVC.swift */; };
 		C67DA0C223EDA5E40077B759 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C123EDA5E40077B759 /* SearchView.swift */; };
-		C67DA0C523EDA6030077B759 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C423EDA6030077B759 /* MoviesView.swift */; };
 		C67DA0C723EDA6130077B759 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C623EDA6130077B759 /* MovieDetailView.swift */; };
 		C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0C823EDA6290077B759 /* MiyazakiView.swift */; };
 		C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0CA23EDA6370077B759 /* TakahataView.swift */; };
@@ -37,16 +38,16 @@
 		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghibli.swift; sourceTree = "<group>"; };
+		C67D0A4823F090C400F8BDC3 /* GhibliJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GhibliJson.json; sourceTree = "<group>"; };
+		C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAPIClient.swift; sourceTree = "<group>"; };
 		C67DA0B023EDA0A10077B759 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C67DA0B223EDA50A0077B759 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		C67DA0B423EDA52D0077B759 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
 		C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
 		C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiVC.swift; sourceTree = "<group>"; };
 		C67DA0BA23EDA5660077B759 /* TakahataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataVC.swift; sourceTree = "<group>"; };
 		C67DA0BC23EDA57E0077B759 /* OtherDirectorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDirectorsVC.swift; sourceTree = "<group>"; };
 		C67DA0BE23EDA5B70077B759 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		C67DA0C123EDA5E40077B759 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		C67DA0C423EDA6030077B759 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		C67DA0C623EDA6130077B759 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		C67DA0C823EDA6290077B759 /* MiyazakiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiyazakiView.swift; sourceTree = "<group>"; };
 		C67DA0CA23EDA6370077B759 /* TakahataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakahataView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67D0A4F23F0924E00F8BDC3 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 			children = (
 				C601908B2381DAC20087D1E4 /* AppDelegate.swift */,
 				C601908D2381DAC20087D1E4 /* SceneDelegate.swift */,
+				C67D0A4C23F091F400F8BDC3 /* Network Services */,
 				C67D0A4123EDB45400F8BDC3 /* Model */,
 				C67DA0C323EDA5ED0077B759 /* Views */,
 				C67DA0C023EDA5C10077B759 /* Controllers */,
@@ -100,8 +103,17 @@
 			isa = PBXGroup;
 			children = (
 				C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */,
+				C67D0A4823F090C400F8BDC3 /* GhibliJson.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C67D0A4C23F091F400F8BDC3 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */,
+			);
+			path = "Network Services";
 			sourceTree = "<group>";
 		};
 		C67DA0C023EDA5C10077B759 /* Controllers */ = {
@@ -109,7 +121,6 @@
 			children = (
 				C67DA0B023EDA0A10077B759 /* TabBar.swift */,
 				C67DA0B223EDA50A0077B759 /* SearchVC.swift */,
-				C67DA0B423EDA52D0077B759 /* MoviesVC.swift */,
 				C67DA0B623EDA5400077B759 /* MovieDetailVC.swift */,
 				C67DA0B823EDA5530077B759 /* MiyazakiVC.swift */,
 				C67DA0BA23EDA5660077B759 /* TakahataVC.swift */,
@@ -123,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				C67DA0C123EDA5E40077B759 /* SearchView.swift */,
-				C67DA0C423EDA6030077B759 /* MoviesView.swift */,
 				C67DA0C623EDA6130077B759 /* MovieDetailView.swift */,
 				C67DA0C823EDA6290077B759 /* MiyazakiView.swift */,
 				C67DA0CA23EDA6370077B759 /* TakahataView.swift */,
@@ -149,6 +159,9 @@
 			dependencies = (
 			);
 			name = StudioGhibliApp;
+			packageProductDependencies = (
+				C67D0A4E23F0924E00F8BDC3 /* ImageKit */,
+			);
 			productName = StudioGhibliApp;
 			productReference = C60190882381DAC20087D1E4 /* StudioGhibliApp.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +190,9 @@
 				Base,
 			);
 			mainGroup = C601907F2381DAC20087D1E4;
+			packageReferences = (
+				C67D0A4D23F0924E00F8BDC3 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = C60190892381DAC20087D1E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */,
+				C67D0A4923F090C400F8BDC3 /* GhibliJson.json in Resources */,
 				C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,14 +221,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */,
-				C67DA0C523EDA6030077B759 /* MoviesView.swift in Sources */,
 				C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */,
-				C67DA0B523EDA52D0077B759 /* MoviesVC.swift in Sources */,
 				C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */,
 				C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */,
 				C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */,
 				C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */,
 				C67DA0BB23EDA5660077B759 /* TakahataVC.swift in Sources */,
+				C67D0A4B23F091EF00F8BDC3 /* GhibliAPIClient.swift in Sources */,
 				C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */,
 				C67DA0C723EDA6130077B759 /* MovieDetailView.swift in Sources */,
 				C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */,
@@ -410,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C67D0A4D23F0924E00F8BDC3 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C67D0A4E23F0924E00F8BDC3 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C67D0A4D23F0924E00F8BDC3 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C60190802381DAC20087D1E4 /* Project object */;
 }

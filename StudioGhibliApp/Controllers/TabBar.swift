@@ -15,11 +15,6 @@ class TabBar: UITabBarController {
         viewController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 0)
         return viewController
     }()
-    private lazy var moviesVC: MoviesVC = {
-       let viewController = MoviesVC()
-        viewController.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film"), tag: 1)
-        return viewController
-    }()
     private lazy var favoritesVC: FavoritesVC = {
        let viewController = FavoritesVC()
         viewController.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "heart.fill"), tag: 1)
@@ -28,7 +23,7 @@ class TabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewControllers = [UINavigationController(rootViewController: searchVC), UINavigationController(rootViewController: moviesVC), UINavigationController(rootViewController: favoritesVC)]
+        viewControllers = [UINavigationController(rootViewController: searchVC), UINavigationController(rootViewController: favoritesVC)]
     }
     
 
