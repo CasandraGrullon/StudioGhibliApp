@@ -10,21 +10,29 @@ import Foundation
 import NetworkHelper
 
 struct GhibliAPIClient {
-    static func getMovies() -> [Ghibli] {
-        var ghibli = [Ghibli]()
-        guard let fileURL = Bundle.main.url(forResource: "GhibliJson", withExtension: "json") else {
-            fatalError("could not get url")
+    static func getMovies(completion: @escaping (Result<[Ghibli],AppError>) -> ()) {
+        let endpointURL = "https://ghibliapi.herokuapp.com/films"
+        guard let url = URL(string: endpointURL) else {
+            completion(.failure(.badURL(endpointURL)))
+            return
+        }
+        let request = URLRequest(url: url)
+        
+        NetworkHelper.shared.performDataTask(with: request) { (result) in
+            switch result {
+            case .failure(let error):
+                completion(.failure(.networkClientError(error)))
+            case .success(let data):
+                do {
+                    let results = try JSONDecoder().decode(Results.self, from: data)
+                    completion(.success(results.ghibli))
+                }catch {
+                    completion(.failure(.decodingError(error)))
+                }
+            }
         }
         
-        do {
-           let data = try Data(contentsOf: fileURL)
-            let results = try JSONDecoder().decode(Ghibli.self, from: data)
-            ghibli = [results]
-        } catch {
-            print("decoding error \(error)")
-            
-        }
-        return ghibli
     }
+    
 }
 

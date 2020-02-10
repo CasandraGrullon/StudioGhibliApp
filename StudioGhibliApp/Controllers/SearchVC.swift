@@ -36,7 +36,14 @@ class SearchVC: UIViewController {
     }
     
     private func getMovies() {
-        ghiblis = GhibliAPIClient.getMovies()
+        GhibliAPIClient.getMovies { [weak self] (result) in
+            switch result {
+            case .failure(let error):
+                print("could not get movies: \(error)")
+            case .success(let movies):
+                self?.ghiblis = movies
+            }
+        }
     }
     
     private func makeSections() {

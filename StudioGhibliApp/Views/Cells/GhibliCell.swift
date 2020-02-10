@@ -60,6 +60,7 @@ class GhibliCell: UICollectionViewCell {
     
     public func configureCell(for movie: Ghibli){
         titleLabel.text = movie.title
+        
     }
     
     
