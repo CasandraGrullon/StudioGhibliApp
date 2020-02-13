@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageKit
 
 class GhibliCell: UICollectionViewCell {
     public lazy var movieImage: UIImageView = {
@@ -58,8 +59,24 @@ class GhibliCell: UICollectionViewCell {
         ])
     }
     
-    public func configureCell(for movie: Ghibli){
+    public func configureCell(for movie: Ghibli, pic: Picture){
         titleLabel.text = movie.title
+        let moviePic = pic.largeImageURL
+        guard var image = movie.image else {
+            return
+        }
+        image = moviePic
+        
+        movieImage.getImage(with: image) { [weak self] (result) in
+            switch result {
+            case .failure:
+                self?.movieImage.image = UIImage(systemName: "film")
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self?.movieImage.image = image
+                }
+            }
+        }
         
     }
     

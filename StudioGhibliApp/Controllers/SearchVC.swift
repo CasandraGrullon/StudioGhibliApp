@@ -19,6 +19,8 @@ class SearchVC: UIViewController {
             }
         }
     }
+    var ghibliPictures = [Picture]()
+    
     var searchQuery = String() {
         didSet {
             ghiblis = ghiblis.filter {$0.title.lowercased() == searchQuery.lowercased()}
@@ -47,6 +49,19 @@ class SearchVC: UIViewController {
                 print("could not get movies: \(error)")
             case .success(let movies):
                 self?.ghiblis = movies
+                DispatchQueue.main.async {
+                    self?.getPictures(for: movies.first?.title ?? "")
+                }
+            }
+        }
+    }
+    private func getPictures(for movie: String) {
+        PicturesAPIClient.getPhotos(for: movie) { [weak self] (result) in
+            switch result {
+            case .failure(let error):
+                print("error getting pics \(error)")
+            case .success(let pictures):
+                self?.ghibliPictures = pictures
             }
         }
     }
@@ -88,8 +103,9 @@ extension SearchVC: UICollectionViewDataSource {
             fatalError("could not cast to cell")
         }
         let movie = ghiblis[indexPath.row]
+        let pic = ghibliPictures[indexPath.row]
         cell.backgroundColor = .white
-        cell.configureCell(for: movie)
+        cell.configureCell(for: movie, pic: pic)
         return cell
     }
 //    func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -16,6 +16,7 @@ struct Ghibli: Codable {
     let producer: String
     let releaseDate: String
     let rating: String
+    var image: String?
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -25,5 +26,6 @@ struct Ghibli: Codable {
         case producer
         case releaseDate = "release_date"
         case rating = "rt_score"
+        case image
     }
 }

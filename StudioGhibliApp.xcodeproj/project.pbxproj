@@ -12,6 +12,8 @@
 		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
 		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
 		C677197D23F5926900CAB2E3 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677197C23F5926900CAB2E3 /* Secrets.swift */; };
+		C677197F23F592D900CAB2E3 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677197E23F592D900CAB2E3 /* Picture.swift */; };
+		C677198123F592F800CAB2E3 /* PictureAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677198023F592F800CAB2E3 /* PictureAPIClient.swift */; };
 		C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */; };
 		C67D0A4B23F091EF00F8BDC3 /* GhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */; };
 		C67D0A4F23F0924E00F8BDC3 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = C67D0A4E23F0924E00F8BDC3 /* ImageKit */; };
@@ -39,6 +41,8 @@
 		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C677197C23F5926900CAB2E3 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		C677197E23F592D900CAB2E3 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		C677198023F592F800CAB2E3 /* PictureAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureAPIClient.swift; sourceTree = "<group>"; };
 		C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghibli.swift; sourceTree = "<group>"; };
 		C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAPIClient.swift; sourceTree = "<group>"; };
 		C67DA0B023EDA0A10077B759 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */,
+				C677197E23F592D900CAB2E3 /* Picture.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */,
+				C677198023F592F800CAB2E3 /* PictureAPIClient.swift */,
 			);
 			path = "Network Services";
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				C67DA0BF23EDA5B70077B759 /* FavoritesVC.swift in Sources */,
 				C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */,
 				C67DA0CB23EDA6370077B759 /* TakahataView.swift in Sources */,
+				C677197F23F592D900CAB2E3 /* Picture.swift in Sources */,
 				C67DA0B923EDA5530077B759 /* MiyazakiVC.swift in Sources */,
 				C67DA0B323EDA50A0077B759 /* SearchVC.swift in Sources */,
 				C67DA0C923EDA6290077B759 /* MiyazakiView.swift in Sources */,
@@ -253,6 +260,7 @@
 				C67DA0BD23EDA57E0077B759 /* OtherDirectorsVC.swift in Sources */,
 				C601908C2381DAC20087D1E4 /* AppDelegate.swift in Sources */,
 				C67DA0B723EDA5400077B759 /* MovieDetailVC.swift in Sources */,
+				C677198123F592F800CAB2E3 /* PictureAPIClient.swift in Sources */,
 				C67DA0CF23EDA64E0077B759 /* FavoritesView.swift in Sources */,
 				C601908E2381DAC20087D1E4 /* SceneDelegate.swift in Sources */,
 				C67DA0C223EDA5E40077B759 /* SearchView.swift in Sources */,
