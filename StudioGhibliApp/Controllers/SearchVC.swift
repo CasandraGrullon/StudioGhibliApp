@@ -14,7 +14,9 @@ class SearchVC: UIViewController {
     
     var ghiblis = [Ghibli]() {
         didSet {
-            self.searchView.moviesCollection.reloadData()
+            DispatchQueue.main.async {
+                self.searchView.moviesCollection.reloadData()
+            }
         }
     }
     var searchQuery = String() {
@@ -32,6 +34,9 @@ class SearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getMovies()
+        print(ghiblis.count)
+        searchView.moviesCollection.delegate = self
+        searchView.moviesCollection.dataSource = self
         searchView.moviesCollection.register(GhibliCell.self, forCellWithReuseIdentifier: "ghibliCell")
     }
     
@@ -75,7 +80,7 @@ extension SearchVC: UITextFieldDelegate {
 }
 extension SearchVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numberOfSections[section].count
+        return ghiblis.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -87,13 +92,17 @@ extension SearchVC: UICollectionViewDataSource {
         cell.configureCell(for: movie)
         return cell
     }
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
-        return numberOfSections.count
-    }
-    
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//
+//        return numberOfSections.count
+//    }
     
 }
 extension SearchVC: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let maxsize: CGSize = UIScreen.main.bounds.size
+        let itemWidth: CGFloat = maxsize.width * 0.8
+        let itemHeight: CGFloat = maxsize.height * 0.30
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
 }

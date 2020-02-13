@@ -7,12 +7,7 @@
 //
 
 import Foundation
-struct Results: Codable {
-    let ghibli: [Ghibli]
-    enum CodingKeys: String, CodingKey {
-        case ghibli = ""
-    }
-}
+
 struct Ghibli: Codable {
     let id: String
     let title: String

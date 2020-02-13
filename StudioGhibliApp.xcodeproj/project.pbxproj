@@ -12,7 +12,6 @@
 		C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60190942381DAC50087D1E4 /* Assets.xcassets */; };
 		C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60190962381DAC50087D1E4 /* LaunchScreen.storyboard */; };
 		C67D0A4323EDB46C00F8BDC3 /* Ghibli.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */; };
-		C67D0A4923F090C400F8BDC3 /* GhibliJson.json in Resources */ = {isa = PBXBuildFile; fileRef = C67D0A4823F090C400F8BDC3 /* GhibliJson.json */; };
 		C67D0A4B23F091EF00F8BDC3 /* GhibliAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */; };
 		C67D0A4F23F0924E00F8BDC3 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = C67D0A4E23F0924E00F8BDC3 /* ImageKit */; };
 		C67DA0B123EDA0A10077B759 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DA0B023EDA0A10077B759 /* TabBar.swift */; };
@@ -39,7 +38,6 @@
 		C60190972381DAC50087D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60190992381DAC50087D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ghibli.swift; sourceTree = "<group>"; };
-		C67D0A4823F090C400F8BDC3 /* GhibliJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GhibliJson.json; sourceTree = "<group>"; };
 		C67D0A4A23F091EF00F8BDC3 /* GhibliAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAPIClient.swift; sourceTree = "<group>"; };
 		C67DA0B023EDA0A10077B759 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C67DA0B223EDA50A0077B759 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				C67D0A4223EDB46C00F8BDC3 /* Ghibli.swift */,
-				C67D0A4823F090C400F8BDC3 /* GhibliJson.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60190982381DAC50087D1E4 /* LaunchScreen.storyboard in Resources */,
-				C67D0A4923F090C400F8BDC3 /* GhibliJson.json in Resources */,
 				C60190952381DAC50087D1E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

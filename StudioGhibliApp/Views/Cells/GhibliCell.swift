@@ -52,7 +52,7 @@ class GhibliCell: UICollectionViewCell {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: movieImage.bottomAnchor, constant: 8),
+            titleLabel.topAnchor.constraint(equalTo: movieImage.bottomAnchor, constant: 10),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8)
         ])

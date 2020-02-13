@@ -24,8 +24,8 @@ struct GhibliAPIClient {
                 completion(.failure(.networkClientError(error)))
             case .success(let data):
                 do {
-                    let results = try JSONDecoder().decode(Results.self, from: data)
-                    completion(.success(results.ghibli))
+                    let results = try JSONDecoder().decode([Ghibli].self, from: data)
+                    completion(.success(results))
                 }catch {
                     completion(.failure(.decodingError(error)))
                 }
