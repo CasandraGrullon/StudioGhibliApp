@@ -59,24 +59,30 @@ class GhibliCell: UICollectionViewCell {
         ])
     }
     
-    public func configureCell(for movie: Ghibli, pic: Picture){
+    public func configureCell(for movie: Ghibli){
         titleLabel.text = movie.title
-        let moviePic = pic.largeImageURL
-        guard var image = movie.image else {
-            return
-        }
-        image = moviePic
+        let movieTitle = movie.title.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
         
-        movieImage.getImage(with: image) { [weak self] (result) in
+        PicturesAPIClient.getPhotos(for: movieTitle) { [weak self] (result) in
             switch result {
-            case .failure:
-                self?.movieImage.image = UIImage(systemName: "film")
-            case .success(let image):
+            case .failure(let pictureError):
+                print("error getting pictures \(pictureError)")
+            case .success(let pictures):
+                let moviePics = pictures
                 DispatchQueue.main.async {
-                    self?.movieImage.image = image
+                    self?.movieImage.getImage(with: moviePics.first?.largeImageURL ?? "") { (result) in
+                        switch result {
+                        case .failure:
+                            self?.movieImage.image = UIImage(systemName: "film")
+                        case .success(let image):
+                            self?.movieImage.image = image
+                        }
+                    }
                 }
             }
         }
+        
+        
         
     }
     
